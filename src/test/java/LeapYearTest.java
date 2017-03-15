@@ -8,4 +8,12 @@ public class LeapYearTest {
     LeapYear leapyear = new LeapYear();
     assertEquals(true, leapyear.isLeapYear(2016));
   }
+
+  @Test
+  public void isLeapYear_divisbleBy400_true() {
+    LeapYear leapyear = new LeapYear();
+    assertEquals(true, leapyear.isLeapYear(1200));
+  }
+
+  
 }
